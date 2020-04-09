@@ -1,0 +1,47 @@
+<html>
+<head> Car
+<script type="text/javascript">
+
+text = input();
+
+var cadi = {
+  make: "GM",
+  model: "Cadillac",
+  year: 1955,
+  color: "tan",
+  passengers: 5,
+  convertible: false,
+  mileage: 12892,
+  started: false,
+  start: function() {
+    this.started = true;
+    },
+  stop: function() {
+    this.started = false;
+    },
+  drive: function() {
+    if (this.started) {
+        alert(this.make + " " + this.model + " goes zoom zoom!");
+              } else {
+                  alert("You need to start the engine first.");
+                }
+          }
+    };
+
+cadi.start();
+cadi.drive();
+cadi.stop();
+cadi.drive();
+cadi.start();
+cadi.drive()
+
+  </script>
+
+
+  </head>
+  <body>
+
+    HTML
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+Here's our script
+<meta charset="utf-8">
+element with the code.
+<title>Planets</title>
+<style>
+.redtext { color:maroon; font-family:arial; font-size: 30px;}
+</style>
+
+<script type="text/javascript">
+
+function trigger()
+{
+     var planet = document.getElementById("greenplanet");
+     planet.innerHTML = "Red Alert! Hit by Phaser fire! 🔥 ";
+     planet.setAttribute("class","redtext");
+}
+
+</script>
+
+
+</head>
+<body>
+<h1>Green Planet</h1>
+
+<p id="greenplanet">All is well</p>
+
+<h1>Red Planet</h1>
+
+<p id="redplanet">Nothing to report</p>
+<h1>Blue Planet</h1>
+<p id="blueplanet">All systems A-OK</p>
+
+<script type="text/javascript">
+
+window.onload=trigger;
+
+</script>
+
+
+</body>
+</html>
